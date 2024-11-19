@@ -2,6 +2,55 @@
 
 ---
 
-<header></header>
+<div class="bg-surface-color">
+  <nav class="container">
+    <a href="#" id="logo">
+      <img src="/icons/logo.svg" alt="Logo Travelgran Pefil de Viagens" />
+    </a>
+    <ul id="primary-menu">
+      <li>
+        <a href="#"> <img src="/icons/lup.svg" alt="icone de Lupa" /></a>
+      </li>
 
-<style lang="scss"></style>
+      <li><a href="#">Explorer</a></li>
+      <li><a href="#">Minhas Viagens</a></li>
+      <li>
+        <a href="#"
+          ><img
+            src="../../src/imgs/profile.jpg"
+            alt="Imagem da Isabela Torres"
+          /></a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<style lang="scss">
+  @use "../styles/util.scss";
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+    padding-block: 20px;
+    ul {
+      display: flex;
+      align-items: center;
+      padding-block: 8px;
+      gap: 24px;
+
+      li {
+        a {
+          img {
+            border-radius: 50%;
+          }
+        }
+        &:last-child img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+</style>
