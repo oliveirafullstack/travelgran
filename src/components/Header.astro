@@ -1,55 +1,80 @@
 ---
-
+import { Image } from "astro:assets";
+import profile from "../imgs/profile.jpg";
 ---
 
-<div class="bg-surface-color">
-  <nav class="container">
-    <a href="#" id="logo">
-      <img src="/icons/logo.svg" alt="Logo Travelgran Pefil de Viagens" />
-    </a>
-    <ul id="primary-menu">
+<header class="bg-surface-color">
+  <div class="container">
+    <div id="profile">
+      <Image
+        width={176}
+        height={176}
+        src={profile}
+        alt="Imagem Perfil Emmanuel Oliveira"
+      />
+      <div>
+        <h1>Emmanuel Oliveira</h1>
+        <p>
+          Amante de viagens, tecnologia e gastronomia. 🌍✈️<br /> Aqui compartilho
+          as histórias registradas em cada clique, explorando cantinhos fascinantes
+          do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸
+        </p>
+      </div>
+    </div>
+    <ul id="info">
       <li>
-        <a href="#"> <img src="/icons/lup.svg" alt="icone de Lupa" /></a>
+        <img src="/icons/MapPin.svg" alt="icone de localizaçao" />
+        <span>São Paulo Brasil</span>
       </li>
-
-      <li><a href="#">Explorer</a></li>
-      <li><a href="#">Minhas Viagens</a></li>
       <li>
-        <a href="#"
-          ><img
-            src="../../src/imgs/profile.jpg"
-            alt="Imagem da Isabela Torres"
-          /></a
+        <img src="/icons/AirplaneTilt.svg" alt="icone de um avião" /><span
+          >37 Paises</span
         >
       </li>
+      <li>
+        <img src="/icons/Image.svg" alt="icone de imagem" />
+        <span>240 fotos</span>
+      </li>
     </ul>
-  </nav>
-</div>
+  </div>
+</header>
 
 <style lang="scss">
   @use "../styles/util.scss";
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 0;
-    padding-block: 20px;
-    ul {
+  header {
+    padding-block: 32px;
+    font: util.$text-md;
+    & .container {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding-block: 8px;
-      gap: 24px;
-
+    }
+    #profile {
+      display: flex;
+      gap: 32px;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      & > div {
+        max-width: 384px;
+        h1 {
+          font: util.$text-lg;
+          color: util.$text-primary;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    #info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 280px;
+      width: 100%;
       li {
-        a {
-          img {
-            border-radius: 50%;
-          }
-        }
-        &:last-child img {
-          width: 40px;
-          height: 40px;
-        }
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     }
   }

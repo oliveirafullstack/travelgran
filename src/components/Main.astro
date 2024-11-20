@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import image1 from "../imgs/Image 01.png";
+import image2 from "../imgs/Image 02.png";
+import image3 from "../imgs/Image 03.png";
+import image4 from "../imgs/Image 04.png";
+import image5 from "../imgs/Image 05.png";
+import image6 from "../imgs/Image 06.png";
+import image7 from "../imgs/Image 07.png";
+import image8 from "../imgs/Image 08.png";
+import image9 from "../imgs/Image 08.png";
+import image10 from "../imgs/Image 10.png";
+import image11 from "../imgs/Image 11.png";
+import image12 from "../imgs/Image 12.png";
+---
+
+<main>
+  <Image width={286} height={286} src={image1} alt="" />
+  <Image width={286} height={286} src={image2} alt="" />
+  <Image width={286} height={286} src={image3} alt="" />
+  <Image width={286} height={286} src={image4} alt="" />
+  <Image width={286} height={286} src={image5} alt="" />
+  <Image width={286} height={286} src={image6} alt="" />
+  <Image width={286} height={286} src={image7} alt="" />
+  <Image width={286} height={286} src={image8} alt="" />
+  <Image width={286} height={286} src={image9} alt="" />
+  <Image width={286} height={286} src={image10} alt="" />
+  <Image width={286} height={286} src={image11} alt="" />
+  <Image width={286} height={286} src={image12} alt="" />
+</main>
+
+<style lang="scss">
+  @use "../styles/util.scss";
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-block: 24px;
+    img {
+      object-fit: cover;
+      box-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+</style>
