@@ -2,7 +2,7 @@
 interface Props {
   title: string;
 }
-import Header from "../components/Header.astro";
+
 import "../styles/util.scss";
 const { title } = Astro.props;
 ---
@@ -26,8 +26,7 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body>
-    <Header />
+  <body class="container">
     <slot />
   </body>
 </html>
