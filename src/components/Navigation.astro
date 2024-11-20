@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import Profile from "../imgs/profile.jpg";
 ---
 
 <div class="bg-surface-color">
@@ -16,9 +17,11 @@
       <li><a href="#">Minhas Viagens</a></li>
       <li>
         <a href="#"
-          ><img
-            src="../../src/imgs/profile.jpg"
-            alt="Imagem da Isabela Torres"
+          ><Image
+            width={176}
+            height={176}
+            src={Profile}
+            alt="Imagem de Emmanule Oliveira"
           /></a
         >
       </li>
