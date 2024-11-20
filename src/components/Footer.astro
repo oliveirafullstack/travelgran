@@ -1,0 +1,27 @@
+---
+
+---
+
+<footer>
+  <span>travelgran &copy; 2024</span>
+  <span>termos de uso</span>
+  <span>politicas de Privacidade</span>
+  <span
+    >Developed by <a href="https://www.ofs.dev.br">Emmanuel Oliveira</a></span
+  >
+</footer>
+
+<style lang="scss">
+  @use "../styles/util.scss";
+  footer {
+    display: flex;
+    padding-block: 24px;
+    gap: 24px;
+    font: util.$text-footer;
+    span {
+      &:nth-child(1) {
+        margin-right: auto;
+      }
+    }
+  }
+</style>
