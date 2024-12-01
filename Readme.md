@@ -50,7 +50,7 @@ Minha fonte de motivação deste projeto foi a [RocketSeat](https://www.rocketse
 
 `Task`
 
-- Desenvolver uma landing-page onde possa divulgar fotos fotos.
+- Desenvolver uma landing-page para divulgação de fotos.
 
 `Charlenge`
 
@@ -88,7 +88,7 @@ Caso você não saiba como fazer, estou deixando um link para a documentação o
 <sub>Command Line</sub>
 
 ```bash
-git clone https://github.com/oliveirafullstack/estrela-do-amanha
+git clone https://github.com/oliveirafullstack/travelgran
 ```
 
 <img alt="Static Badge" src="https://img.shields.io/badge/-path?style=social&logo=git&label=GitHub%20Docs&color=%23000">
